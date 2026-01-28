@@ -1,0 +1,149 @@
+i wanna do a script for monitor results and this is login page 
+
+GET / HTTP/1.1
+Host: myu.mans.edu.eg
+Cookie: csrftoken=qgzVyGk8ZZ4iaj669m6B0sDoK5H8FRYgLeC3b6X1geNyM3Fr6GO7IJbYqxeOdP3i; lhc_per=vid|e74ac5fcdbf2a769622f; SP_django_language=ar
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.9
+Accept-Encoding: gzip, deflate, br
+Upgrade-Insecure-Requests: 1
+Referer: https://myu.mans.edu.eg/
+Sec-Gpc: 1
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: same-origin
+Sec-Fetch-Site: same-origin
+Priority: u=2
+Te: trailers
+Connection: keep-alive
+
+
+ has some values i we want
+                               <input type="hidden" name="csrfmiddlewaretoken" value="value">
+                                <div 
+
+
+and this is login 
+
+
+POST /login HTTP/1.1
+Host: myu.mans.edu.eg
+Cookie: csrftoken=qgzVyGk8ZZ4iaj669m6B0sDoK5H8FRYgLeC3b6X1geNyM3Fr6GO7IJbYqxeOdP3i; lhc_per=vid|e74ac5fcdbf2a769622f; SP_django_language=ar
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.9
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/x-www-form-urlencoded
+Upgrade-Insecure-Requests: 1
+Referer: https://myu.mans.edu.eg/
+Content-Length: 148
+Origin: https://myu.mans.edu.eg
+Sec-Gpc: 1
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: same-origin
+Sec-Fetch-Site: same-origin
+Priority: u=2
+Te: trailers
+Connection: keep-alive
+
+csrfmiddlewaretoken=value&txtUserName=username&txtPassword=password&hdnLang=ar
+
+
+HTTP/1.1 302 Found
+Server: nginx/1.20.1
+Date: Wed, 28 Jan 2026 14:10:50 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 0
+Connection: keep-alive
+Location: /
+X-Frame-Options: DENY
+Vary: Origin,Accept-Language,Cookie
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: api-version, content-length, content-md5, content-type, date, request-id, response-time
+Content-Language: ar
+X-Content-Type-Options: nosniff
+Set-Cookie: sessionid=.eJyrViouiC8tTi1SslIyNTYwsDCtMTIwMtM1MNQ1slAwNLMyNLAyNdAzsjSxNMInpaQDMqg4tbg4Mz9PycrQ0tTQwszY3LIWAJSuF_Q:1vl6Fu:e4qs46qUCq0I0-6YuTUXVceSgCo; expires=Wed, 11 Feb 2026 14:10:50 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: no-referrer-when-downgrade
+
+
+
+and this is result request
+
+GET /education/grades?530085&app_id=4&click_item_id= HTTP/1.1
+Host: myu.mans.edu.eg
+Cookie: csrftoken=qgzVyGk8ZZ4iaj669m6B0sDoK5H8FRYgLeC3b6X1geNyM3Fr6GO7IJbYqxeOdP3i; lhc_per=vid|e74ac5fcdbf2a769622f; SP_django_language=ar; sessionid=.eJxtzDEOgDAIAMCvGGZrgAIin3Hq4KJG4qT-3bg7X3IX5D6f2Q4I0IroejOyFaTC3pEFSYgOhlXkj2xwZtMR-i_KlrlsKwRNSu5q9LyVsxf2:1vl6Ji:-aJoRj29Tftsd5ysWdjKbPlcsJE
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0
+Accept: text/html, */*; q=0.01
+Accept-Language: ar
+Accept-Encoding: gzip, deflate, br
+Lang: ar
+App_id: 4
+X-Requested-With: XMLHttpRequest
+Referer: https://myu.mans.edu.eg/
+Sec-Gpc: 1
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+Priority: u=4
+Te: trailers
+Connection: keep-alive
+
+HTTP/1.1 200 OK
+Server: nginx/1.20.1
+Date: Wed, 28 Jan 2026 14:14:50 GMT
+Content-Type: text/html; charset=utf-8
+Connection: keep-alive
+X-Frame-Options: DENY
+Vary: Origin,Accept-Language,Cookie,Accept-Encoding
+Content-Language: ar
+X-Content-Type-Options: nosniff
+Set-Cookie: sessionid=.eJxtzDEOgDAIAMCvGGbbAIUW-YxTBxc1Eif178bd-ZK7IPb5jH6AgxZE05uRa0JKbANVJ3HRXLGI_JBiFuPWCoxfFD1i2VZwmpTMtNLzApUxF_I:1vl6Jm:UFaX5uzFTPlGsqP3yZAkCpo7npE; expires=Wed, 11 Feb 2026 14:14:50 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: no-referrer-when-downgrade
+Content-Length: 50277
+
+
+
+<link href="/static/css/education.2d622d604dbe.css" rel="stylesheet">
+
+
+    <div class="row" style="margin-bottom: 20px;">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title" style="font-weight: bold;" >
+                        <span >رابعة - نظم المعلومات - كلية الحاسبات والمعلومات</span>&nbsp;
+                        <span>2025-2026</span>
+                    </h5>
+                    <a class="card-control" data-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                        <span class="minimize"><i class="fa fa-caret-up"></i></span>
+                        <span class="restore"><i class="fa fa-caret-down"></i></span>
+                    </a>
+                </div>
+                <div class="collapse show" id="collapse1">
+                <div class="card-body">
+                     <!-- using parenthesis in if causes error -->
+                        <div class="alert alert-danger" role="alert" > النتيجة لم تعلن بعد </div>
+                    
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>     
+
+and if the request return انتهت فترة الدخول، يجب تسجيل الدخول مرة أخرى resign and optain new session
+
+
+
+in python simple clean clear
+
+# Python dependencies for result monitor
+requests==2.32.3
+beautifulsoup4==4.12.3
+python-dotenv==1.0.1
+lxml==5.3.0
